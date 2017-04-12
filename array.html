@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+      var amimals;
+      animals=["cat","dog","fish","ox"];
+      animals.push("fox");
+      animals.unshift("pig");
+      var trash=animals.pop();
+      animals.shift();
+      alert(animals.join(" and ")); //default separator is ","
+      alert(trash+" "+animals);
+      var numbers=[1,2,3,4,5];
+      var results=animals.concat(numbers);
+      alert(results);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style media="screen">
+        .info {
+            border-color: yellow;
+            border-width: thick;
+            background-color: lightyellow;
+            margin-bottom: 10px;
+            width: 720px;
+
+        }
+        .label{
+          width: 180px;
+          display: inline-block;
+          text-align:right;
+          text-align: top;
+
+        }
+        #address{
+          width: 360px;
+          height: 50px;
+        }
+        .min{
+          text-align: center;
+          background-color: pink;
+        }
+
+        .max{
+          text-align: center;
+          background-color: purple;
+        }
+        /*interaction functionality*/
+        label:hover{
+          font-size:20px;
+        }
+
+    </style>
+
+    <title>Take me out</title>
+
+</head>
+
+<body>
+    <h1>Please Enter Your Details For Our Dating Website</h1>
+    <form class="" action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post">
+        <fieldset class="info">
+            <legend>Your Face</legend>
+            <label class="label"for="file">Your Image:</label>
+            <input type="file" name="upload" id="file" value=""><br>
+            <label class="label" for="preview">Image Preview:</label>
+            <img id="preview" src="" alt="">
+        </fieldset>
+        <fieldset class="info">
+            <legend>Your General Details</legend>
+            <label class="label" for="username">Name:</label>
+            <input type="text" name="username" id="username" value="" placeholder="your full name"><br>
+            <label class="label"for="">Gender:</label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female <br>
+            <label class="label"for="age">Age:</label>
+            <input type="age" name="" id="age" value=""><br>
+            <label class="label"for="birth">Date of Birth:</label>
+            <input type="date" name="birth" id="birth" value=""><br>
+            <label class="label"for="">Favorite Color:</label>
+            <input type="color" name="" value=""><br>
+            <label class="label"for="">Which Country:</label>
+            <select class="" name="country">
+              <option disabled selected value> -- select a country -- </option>
+              <option value="china">China</option>
+              <option value="germany">Germany</option>
+              <option value="austria">Austria</option>
+              <option value="usa">USA</option>
+            </select>
+
+
+
+        </fieldset>
+
+        <fieldset class="info">
+            <legend>Your Indicators</legend>
+            <label class="label"for="">Height:</label> <label for="" class="min">Short</label> <input type="range" name="" value=""><label class="max"for="">Tall</label><br>
+            <label class="label"for="">Salary:</label> <label class="min"for="">Poor</label> <input type="range" name="" value=""> <label class="max"for="">Rich</label> <br>
+        </fieldset>
+
+        <fieldset class="info">
+            <legend>Your Contact Information</legend>
+            <label class="label"for="">Email:</label>
+            <input type="email" name="" value=""><br>
+            <label class="label"for="">Mobile:</label>
+            <input type="text" name="" value=""><br>
+            <label class="label"for="">Address:</label>
+            <textarea id="address"name="address" rows="4" cols="40"></textarea><br>
+            <label class="label"for="">Method to contact you</label>
+            <input type="checkbox" name="" value="">Email
+            <input type="checkbox" name="" value="">Mobile
+        </fieldset>
+        <input type="submit" name="" value="submit">
+    </form>
+    <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script> 
+</body>
+
+</html>
