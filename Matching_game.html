@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style media="screen">
+        #rightside {
+            border-left: 1px solid black;
+            left: 50%;
+        }
+
+        div {
+            position: absolute;
+            width: 50%;
+            height: 100%;
+        }
+        img {
+          position: absolute;;
+        }
+    </style>
+    <title>Matching_game</title>
+    <script src="Matching_game.js">
+    </script>
+</head>
+
+<body onload="generate_faces()">
+    <h1>Matching Game</h1>
+    <p>Click on the extra smiling face on the left!</p>
+    <div id="leftside"></div>
+    <div id="rightside"></div>
+
+</body>
+
+</html>

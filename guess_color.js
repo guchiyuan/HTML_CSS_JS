@@ -14,6 +14,8 @@ function do_game() {
         guesses++;
         finished = check_guess();
     }
+    setTimeout(function(){alert("You got it with" + guesses + "times");},1);
+
 }
 
 function check_guess() {
@@ -30,15 +32,16 @@ function check_guess() {
                 return false;
                 break;
             case guess_color == target:
+
                 var myBody = document.getElementsByTagName("body")[0];
                 myBody.style.background = target;
-                alert("You got it with" + guesses + "times");
+
                 return true;
                 break;
             default:
                 alert("Plese Enter!");
         }
-    }else {
-      alert("Sorry,I don't recognize your color.\nPlease try again.");
+    } else {
+        alert("Sorry,I don't recognize your color.\nPlease try again.");
     }
 }
